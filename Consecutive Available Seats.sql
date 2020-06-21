@@ -22,3 +22,10 @@ Note:
 The seat_id is an auto increment int, and free is bool ('1' means free, and '0' means occupied.).
 Consecutive available seats are more than 2(inclusive) seats consecutively available.
 */
+
+SELECT DISTINCT b.seat_id
+FROM cinema a
+JOIN cinema b
+ON abs(a.seat_id - b.seat_id) = 1
+AND a.free=1 AND b.free=1
+ORDER BY b.seat_id;
