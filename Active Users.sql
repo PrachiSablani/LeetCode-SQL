@@ -1,5 +1,5 @@
 /*
-Table Accounts:
+Table accounts:
 
 +---------------+---------+
 | Column Name   | Type    |
